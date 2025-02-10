@@ -4,6 +4,7 @@ import Guide from './Pages/Guide';
 import Ikigai from './Pages/Ikigai';
 import Notion from './Pages/Notion';
 import UniResearch from './Pages/UniResearch';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/notion" element={<Notion />} />
         <Route path="/uni-research" element={<UniResearch />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
